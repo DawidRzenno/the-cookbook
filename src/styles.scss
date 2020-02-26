@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans|Roboto&display=swap');
+@import 'variables';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+   margin: 0px;
+   font-family: 'Roboto';
+ }
+
+.component {
+  padding: $component-padding;
+  min-height: calc(100vh - 50px - 64px);
+}
+
+.link-button {
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.link, .link-button {
+  cursor: pointer;
+}
+
+.flex-row {
+  display: flex;
+}

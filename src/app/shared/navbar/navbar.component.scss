@@ -1,0 +1,26 @@
+@import "../../../variables";
+
+nav {
+  background-color: $navbar-background-color;
+  padding: $navbar-padding;
+  color: $navbar-font-color;
+}
+
+.flex-row--space-between {
+  justify-content: space-between;
+}
+
+.link-button:hover {
+  color: rgb(221, 221, 221);
+}
+
+.link-button.sign-up {
+  background-color: #ad9371;
+}
+
+.link-button.home {
+  font-size: 36px;
+  padding: 0px;
+  color: #ddcdb9;
+  font-family: 'Odibee Sans';
+}

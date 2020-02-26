@@ -1,0 +1,33 @@
+.component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  padding: 10px;
+  text-align: center;
+  font-size: 28px;
+}
+
+.current-location {
+  background-color: rgb(243, 243, 243);
+  border: 1px solid rgb(212, 212, 212);
+  font-family: 'Courier New', Courier, monospace;
+  padding: 5px 10px;
+}
+
+.link-button {
+  display: flex;
+  align-items: center;
+}
+
+.link-button__text {
+  padding-left: 5px;
+}

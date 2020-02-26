@@ -1,0 +1,32 @@
+@import '../../../variables';
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $footer-background-color;
+  padding: $footer-padding;
+  color: rgb(184, 184, 184);
+  font-size: 14px;
+}
+
+.link {
+  padding: 5px;
+  margin: 0px;
+}
+
+.link.created-by {
+  display: flex;
+  .author {
+    margin: 0px 4px;
+    color: rgb(160, 144, 113);
+  }
+}
+.link.created-by:hover, .link.mail:hover {
+  color: white;
+  .author {
+    color: rgb(207, 183, 134);
+  }
+}
+
+

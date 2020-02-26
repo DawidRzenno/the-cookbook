@@ -1,0 +1,16 @@
+.flex-row {
+  display: flex;
+}
+
+.flex-row--vertical-center {
+  justify-content: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.fb-page {
+  margin: 40px;
+}
