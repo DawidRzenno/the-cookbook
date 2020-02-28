@@ -1,0 +1,37 @@
+<div class="component component--in-middle-of-the-screen">
+  <div class="log-in-box">
+    <div class="log-in-box__header"> the Cookbook </div>
+    <form [formGroup]="formGroup">
+      <div class="form__input-wrapper">
+        <i class="fas fa-user"> </i>
+        <input
+          placeholder="Username"
+          formControlName="username"
+          type="text"
+        >
+      </div>
+      <div class="form__input-wrapper">
+        <i class="fas fa-lock"> </i>
+        <input 
+          placeholder="Password"
+          formControlName="password"
+          [type]="showPassword ? 'text' : 'password'"
+        >
+        <div
+          class="show-hide-button"
+          (click)="showPassword = !showPassword"
+        >
+          <i *ngIf="showPassword" class="fas fa-eye"></i>
+          <i *ngIf="!showPassword" class="fas fa-eye-slash"></i>
+      </div>
+      </div>
+      <div class="form__login-options">
+        <div class="checkbox-wrapper">
+          <input type="checkbox"> Remember me
+        </div>
+        <a [routerLink]="">Forgot Password?</a>
+      </div>
+      <button type="submit">Log in</button>
+    </form>
+  </div>
+</div>

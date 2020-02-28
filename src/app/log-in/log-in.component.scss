@@ -1,0 +1,73 @@
+@import '../../variables';
+
+.log-in-box {
+    padding: 40px 60px;
+    background-color: $lightest-accent-color;
+}
+
+.log-in-box__header {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Odibee Sans';
+}
+
+form {
+    [type="submit"]{
+        border-radius: 10px;
+        font-size: 18px;
+        color: $light-font;
+        margin-top: 10px;
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background-color: $accent-color;
+    }
+    [type="submit"]:hover {
+        background-color: $lighter-accent-color;
+        border: 1px $accent-color solid;
+        padding: 9px;
+        cursor: pointer;
+    }
+}
+
+i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.form__login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    padding: 30px 0px 10px;
+    .checkbox-wrapper {
+        display: flex;
+        align-items: center;
+        input {
+            margin: 0px 5px 2px;
+            padding: 5px;
+        }
+    }
+}
+
+.form__input-wrapper {
+    display: flex;
+    margin: 10px 0px;
+    background-color: white;
+    input {
+        width: 12vw;
+        padding: 10px;
+        border: none;
+    }
+    .show-hide-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 34px;
+        cursor: pointer;
+    }
+
+}

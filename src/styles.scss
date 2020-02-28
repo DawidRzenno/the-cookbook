@@ -7,13 +7,19 @@
 }
 
 body {
-   margin: 0px;
-   font-family: 'Roboto';
- }
+  margin: 0px;
+  font-family: 'Roboto';
+}
 
 .component {
   padding: $component-padding;
   min-height: calc(100vh - 50px - 64px);
+}
+
+.component--in-middle-of-the-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .link-button {

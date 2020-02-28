@@ -1,14 +1,15 @@
-// DEFAULT VARIABLES /////////////////////
-$background-color: rgb(37, 37, 37);
-$padding: 5px 10%;
-$font-color: white;
+// GLOBAL VARIABLES /////////////////////
+$component-padding: 5px 10%;
+
+$light-font: rgb(255, 255, 255);
+$darker-light-font: rgb(219, 219, 219);
+$lighter-dark-font: rgb(37, 37, 37);
+$dark-font: rgb(0, 0, 0);
+
+$primary-color-1: rgb(255, 255, 255);
+$primary-color-2: rgb(37, 37, 37);
+$lightest-accent-color: rgb(236, 231, 222);
+$lighter-accent-color: rgb(190, 178, 156);
+$accent-color: rgb(182, 164, 138);
+$darker-accent-color: rgb(143, 132, 116);
 //////////////////////////////////////////
-
-$component-padding: $padding;
-
-$navbar-background-color: $background-color;
-$navbar-padding: $padding;
-$navbar-font-color: $font-color;
-
-$footer-background-color: $background-color;
-$footer-padding: $padding;
