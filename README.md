@@ -1,3 +1,5 @@
+
+
 # Cookbook
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.22.
@@ -5,6 +7,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+# XAMPP
+
+- Install XAMPP
+- Go to `C:\xampp\apache\conf\httpd.conf`
+- Open `httpd.conf`
+- Find tag : DocumentRoot `"C:/xampp/htdocs"`
+- Edit tag to : DocumentRoot `" insert path to the-cookbook/src/php folder here "`
+- Now find tag and change it to < Directory `" insert path to the-cookbook/src/php folder here "` >
+- Restart Your Apache
 
 ## Code scaffolding
 

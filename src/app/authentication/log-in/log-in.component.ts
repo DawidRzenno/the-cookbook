@@ -15,8 +15,13 @@ export class LogInComponent implements OnInit {
     this.showPassword = false;
     this.formGroup = new FormGroup({
       username: new FormControl(''),
-      password: new FormControl('')
+      password: new FormControl(''),
+      rememberMe: new FormControl(false),
     });
+  }
+
+  logIn(){
+    console.log(this.formGroup.value);
   }
 
   ngOnInit() {

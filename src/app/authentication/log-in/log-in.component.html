@@ -1,4 +1,4 @@
-<div class="component component--in-middle-of-the-screen">
+<div class="component component--in-middle-of-the-screen" (submit)="logIn()" >
   <div class="log-in-box">
     <div class="log-in-box__header"> the Cookbook </div>
     <form [formGroup]="formGroup">
@@ -27,7 +27,7 @@
       </div>
       <div class="form__login-options">
         <div class="checkbox-wrapper">
-          <input type="checkbox"> Remember me
+          <input type="checkbox" formControlName="rememberMe"> Remember me
         </div>
         <a [routerLink]="">Forgot Password?</a>
       </div>

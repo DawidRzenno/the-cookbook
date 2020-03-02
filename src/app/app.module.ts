@@ -7,7 +7,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DevLogComponent } from './dev-log/dev-log.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { LogInComponent } from './log-in/log-in.component';
+import { LogInComponent } from './authentication/log-in/log-in.component';
+import { LogOutComponent } from './authentication/log-out/log-out.component';
+import { SignUpComponent } from './registration/sign-up/sign-up.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { LogInComponent } from './log-in/log-in.component';
     AppComponent,
     DevLogComponent,
     PageNotFoundComponent,
-    LogInComponent
+    LogInComponent,
+    LogOutComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
