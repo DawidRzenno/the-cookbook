@@ -1,15 +1,16 @@
-// GLOBAL VARIABLES /////////////////////
-$component-padding: 5px 10%;
+/*       
+             Flat design colors
+    https://htmlcolorcodes.com/color-chart/
+*/
 
-$light-font: rgb(255, 255, 255);
-$darker-light-font: rgb(219, 219, 219);
-$lighter-dark-font: rgb(37, 37, 37);
-$dark-font: rgb(0, 0, 0);
+$primary-whitesmoke: rgb(245, 245, 245);
+$primary-whitesmoke--darker: rgb( 238, 238, 238 );
+$primary-whitesmoke--darker-2: rgb(235, 235, 235);
 
-$primary-color-1: rgb(255, 255, 255);
-$primary-color-2: rgb(37, 37, 37);
-$lightest-accent-color: rgb(236, 231, 222);
-$lighter-accent-color: rgb(190, 178, 156);
-$accent-color: rgb(182, 164, 138);
-$darker-accent-color: rgb(143, 132, 116);
-//////////////////////////////////////////
+$primary-graphite: rgb(33, 33, 33);
+$primary-graphite--lighter: rgb(66, 66, 66);
+
+$accent-cork: rgb(200, 174, 124);
+$accent-cork--lighter: rgb(219, 195, 150);
+
+$global-padding: 5px 10%;

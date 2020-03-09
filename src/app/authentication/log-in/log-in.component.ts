@@ -14,7 +14,7 @@ export class LogInComponent implements OnInit {
   constructor() {
     this.showPassword = false;
     this.formGroup = new FormGroup({
-      username: new FormControl(''),
+      login: new FormControl(''),
       password: new FormControl(''),
       rememberMe: new FormControl(false),
     });

@@ -5,8 +5,8 @@
       <div class="form__input-wrapper">
         <i class="fas fa-user"> </i>
         <input
-          placeholder="Username"
-          formControlName="username"
+          placeholder="Email or username"
+          formControlName="login"
           type="text"
         >
       </div>
@@ -29,9 +29,9 @@
         <div class="checkbox-wrapper">
           <input type="checkbox" formControlName="rememberMe"> Remember me
         </div>
-        <a [routerLink]="">Forgot Password?</a>
+        <a [routerLink]="['/' , 'forgotten-password']">Forgot Password?</a>
       </div>
-      <button type="submit">Log in</button>
+      <button class="button" type="submit">Log in</button>
     </form>
   </div>
 </div>

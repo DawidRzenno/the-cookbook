@@ -1,26 +1,39 @@
 @import "../../../variables";
 
-nav {
-  background-color: $primary-color-2;
-  padding: $component-padding;
-  color: $light-font;
+.nav {
+  background-color: $primary-graphite;
+  padding: $global-padding;
+  color: $primary-whitesmoke;
 }
 
-.flex-row--space-between {
-  justify-content: space-between;
+.button {
+  color: $primary-whitesmoke;
+  background-color: transparent;
 }
 
-.link-button:hover {
-  color: $darker-light-font;
+.main-links {
+  .button:hover {
+    background-color: $primary-graphite--lighter;
+  }
 }
 
-.link-button.sign-up {
-  background-color: $accent-color;
+.button--sign-up {
+  background-color: $accent-cork;
+  color: $primary-graphite--lighter;
+  border-radius: 20px;
+  margin-left: 10px;
+  font-weight: bolder;
 }
 
-.link-button.home {
+.button--sign-up:hover {
+  background-color: $accent-cork--lighter !important;
+}
+
+.button--home {
   font-size: 36px;
   padding: 0px;
-  color: $accent-color;
+  color: $accent-cork;
   font-family: 'Odibee Sans';
 }
+
+

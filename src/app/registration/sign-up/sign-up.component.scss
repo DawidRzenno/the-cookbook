@@ -1,0 +1,110 @@
+@import '../../../variables';
+
+.sign-up-box {
+    width: 500px;
+    padding: 60px 60px;
+    background-color: rgb(247, 247, 247);
+    border: rgb(226, 226, 226) 1px solid;
+}
+
+.the-cookbook-logotype {
+    font-family: 'Odibee Sans';
+    margin-bottom: 30px;
+}
+
+.the-cookbook-logotype--50px {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Odibee Sans';
+}
+
+.input-group {
+    display: flex;
+    background-color: white;
+}
+
+.input-group__input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+
+.input-group__show-hide-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    cursor: pointer;
+}
+
+i { // icons
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.button {
+    background-color: $primary-whitesmoke--darker-2;
+}
+
+.button--continue-with {
+    font-size: 18px;
+    color: $primary-graphite;
+    margin-top: 10px;
+    transition: background-image 2s;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding: none;
+    border: none;
+}
+
+.google {
+    height: 46px;
+    width: 191px;
+    background-image: url('../../../assets/signin-assets/google_signin_buttons/web/1x/btn_google_signin_light_normal_web.png');
+}
+
+.google:hover {
+    background-image: url('../../../assets/signin-assets/google_signin_buttons/web/1x/btn_google_signin_light_focus_web.png');
+}
+
+.google:active {
+    background-image: url('../../../assets/signin-assets/google_signin_buttons/web/1x/btn_google_signin_light_pressed_web.png');
+}
+
+
+.or {
+    margin: 10px 0px 0px;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: rgb(172, 172, 172);
+}
+
+.button--sign-up {
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: $accent-cork;
+}
+
+.button--sign-up:hover {
+    background-color: $accent-cork--lighter;
+    cursor: pointer;
+}
+
+.form__form-element {
+    margin-bottom: 10px;
+}
+
+.form-element__validation-message {
+    // background-color: rgb(255, 193, 193);
+    color: rgb(221, 23, 23);
+    font-size: 14px;
+    padding: 5px;
+}

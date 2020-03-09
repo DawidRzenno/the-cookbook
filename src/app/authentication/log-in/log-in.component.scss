@@ -1,8 +1,10 @@
 @import '../../../variables';
 
 .log-in-box {
-    padding: 40px 60px;
-    background-color: $lightest-accent-color;
+    width: 500px;
+    padding: 60px 60px;
+    background-color: rgb(247, 247, 247);
+    border: rgb(226, 226, 226) 1px solid;
 }
 
 .log-in-box__header {
@@ -15,18 +17,15 @@ form {
     [type="submit"]{
         border-radius: 10px;
         font-size: 18px;
-        color: $light-font;
+        color: white;
         margin-top: 10px;
         width: 100%;
         padding: 10px;
         border: none;
-        background-color: $accent-color;
+        background-color: $accent-cork;
     }
     [type="submit"]:hover {
-        background-color: $lighter-accent-color;
-        border: 1px $accent-color solid;
-        padding: 9px;
-        cursor: pointer;
+        background-color: $accent-cork--lighter;
     }
 }
 
@@ -54,11 +53,12 @@ i {
 }
 
 .form__input-wrapper {
+    width: 100%;
     display: flex;
     margin: 10px 0px;
     background-color: white;
     input {
-        width: 12vw;
+        width: 100%;
         padding: 10px;
         border: none;
     }

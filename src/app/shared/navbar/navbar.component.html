@@ -1,14 +1,14 @@
-<nav class="flex-row flex-row--space-between">
+<nav class="flex-row flex-row--space-between nav">
   <div class="flex-item">
-    <div class="link-button home" [routerLink]="['/']"> the Cookbook </div>
+    <button class="button button--home" [routerLink]="['/']"> the Cookbook </button>
   </div>
-  <div class="flex-item flex-row">
-    <div class="link-button dev-log" [routerLink]="['/dev-log']"> Dev Log </div>
-    <div class="link-button blog" [routerLink]="['/blog']"> Blog </div>
-    <div class="link-button my-cookbook" [routerLink]="['/my-cookbook']"> My Cookbook </div>
-    <div class="link-button recipes" [routerLink]="['/recipes']"> Recipes </div>
-    <div class="link-button log-in" [routerLink]="['/log-in']"> Log In </div>
-    <div class="link-button log-out" [routerLink]="['/log-out']"> Log Out </div>
-    <div class="link-button sign-up" [routerLink]="['/sign-up']"> Create an account </div>
+  <div class="flex-item flex-row main-links">
+    <button class="button" [routerLink]="['/dev-log']"> Dev Log </button>
+    <button class="button" [routerLink]="['/blog']"> Blog </button>
+    <button class="button" [routerLink]="['/my-cookbook']"> My Cookbook </button>
+    <button class="button" [routerLink]="['/recipes']"> Recipes </button>
+    <button class="button" [routerLink]="['/log-in']"> Log In </button>
+    <button class="button" [routerLink]="['/log-out']"> Log Out </button>
+    <button class="button button--sign-up" [routerLink]="['/sign-up']"> Open a new cookbook </button>
   </div>
 </nav>

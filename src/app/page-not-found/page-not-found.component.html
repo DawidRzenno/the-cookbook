@@ -2,15 +2,13 @@
   <div class="information">
     <div class="header"> HTTP 404 Page not found :(</div>
     <div class="current-location" *ngIf="currentLocation"> {{currentLocation}} </div>
-    <div class="flex-row">
-
-      <div class="link-button previous-page" (click)="displayPreviousPage()">
-        <i class="fas fa-arrow-circle-left"></i><div class="link-button__text"> Go back</div>
-      </div>
-      <div class="link-button home" [routerLink]="['/']">
-        <i class="fas fa-home"></i><div class="link-button__text"> Go home</div>
-      </div>
-
+    <div class="flex-row buttons">
+      <button class="button" (click)="displayPreviousPage()"> 
+        <i class="fas fa-arrow-circle-left"></i><div class="link-button__text"> Go back</div> 
+      </button>
+      <button class="button" [routerLink]="['/']"> 
+        <i class="fas fa-home"></i><div class="link-button__text"> Go home</div> 
+      </button>
     </div>
   </div>
 </div>

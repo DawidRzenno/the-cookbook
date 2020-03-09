@@ -23,9 +23,19 @@
   padding: 5px 10px;
 }
 
-.link-button {
+.buttons {
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.button {
+  background-color: transparent;
   display: flex;
-  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  background-color: rgba(231, 231, 231, 0.5);
 }
 
 .link-button__text {

@@ -1,3 +1,47 @@
-<div class="component">
-    <p>sign-up works!</p>
+<div class="component component--in-middle-of-the-screen" (submit)="signUp()">
+    <div class="sign-up-box">
+        <form [formGroup]="formGroup">
+            <div class="the-cookbook-logotype the-cookbook-logotype--50px"> the Cookbook </div>
+
+            <div class="form__form-element">
+                <div class="input-group">
+                    <i class="fas fa-envelope"> </i>
+                    <input class="input-group__input" placeholder="Email" formControlName="email" type="text">
+                </div>
+                <div *ngIf="error" class="form-element__validation-message"> Sample error message </div>
+            </div>
+
+            <div class="form__form-element">
+                <div class="input-group">
+                    <i class="fas fa-user"> </i>
+                    <input class="input-group__input" placeholder="Username" formControlName="username" type="text">
+                </div>
+                <div *ngIf="error" class="form-element__validation-message"> Sample error message</div>
+            </div>
+
+            <div class="form__form-element">
+                <div class="input-group">
+                    <i class="fas fa-lock"> </i>
+                    <input class="input-group__input" placeholder="Password" formControlName="password" [type]="showPassword ? 'text' : 'password'">
+                    <div class="input-group__show-hide-button" (click)="showPassword = !showPassword">
+                        <i *ngIf="showPassword" class="fas fa-eye"></i>
+                        <i *ngIf="!showPassword" class="fas fa-eye-slash"></i>
+                    </div>
+                </div>
+                <div *ngIf="error" class="form-element__validation-message"> Sample error message</div>
+            </div>
+
+            <button class="button button--sign-up" type="submit">Sign Up</button>
+            
+            <div class="or"> OR </div>
+
+            <div class="flex-row flex-row--justify-center">
+                <button (click)="error = !error" class="button button--continue-with google" type="button"></button>
+                <!-- <button class="button button--continue-with" type="button">
+                    <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
+                    Log in with Facebook
+                </button> -->
+            </div>
+        </form>
+    </div>
 </div>

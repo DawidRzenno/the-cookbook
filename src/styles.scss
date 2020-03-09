@@ -4,16 +4,17 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Roboto';
 }
 
 body {
   margin: 0px;
-  font-family: 'Roboto';
 }
 
 .component {
-  padding: $component-padding;
-  min-height: calc(100vh - 50px - 64px);
+  padding: 5px 10%;
+  // viewport_height - navbar - footer //
+  min-height: calc(100vh - 50px - 64px); 
 }
 
 .component--in-middle-of-the-screen {
@@ -22,16 +23,22 @@ body {
   align-items: center;
 }
 
-.link-button {
-  margin-left: 10px;
-  padding: 10px;
-  border-radius: 25px;
-}
-
-.link, .link-button {
+.button {
+  font-size: 14px;
+  padding: 5px 10px;
+  transition: background-color 100ms;
+  border: none;
   cursor: pointer;
 }
 
 .flex-row {
   display: flex;
+}
+
+.flex-row--space-between {
+  justify-content: space-between;
+}
+
+.flex-row--justify-center {
+  justify-content: center;
 }

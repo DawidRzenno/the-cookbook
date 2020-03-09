@@ -10,6 +10,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { LogInComponent } from './authentication/log-in/log-in.component';
 import { LogOutComponent } from './authentication/log-out/log-out.component';
 import { SignUpComponent } from './registration/sign-up/sign-up.component';
+import { ForgottenPasswordComponent } from './authentication/log-in/forgotten-password/forgotten-password.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { SignUpComponent } from './registration/sign-up/sign-up.component';
     PageNotFoundComponent,
     LogInComponent,
     LogOutComponent,
-    SignUpComponent
+    SignUpComponent,
+    ForgottenPasswordComponent
   ],
   imports: [
     BrowserModule,

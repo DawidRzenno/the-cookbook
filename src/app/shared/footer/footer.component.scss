@@ -1,13 +1,17 @@
 @import '../../../variables';
 
-footer {
+.footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $primary-color-2;
-  padding: $component-padding;
-  color: $darker-light-font;
+  background-color: $primary-graphite;
+  padding: $global-padding;
   font-size: 14px;
+}
+
+.button {
+  background-color: transparent;
+  color: $primary-whitesmoke;
 }
 
 .link {
@@ -15,17 +19,17 @@ footer {
   margin: 0px;
 }
 
-.link.created-by {
+.button--created-by {
   display: flex;
-  .author {
+  .button__author {
     margin: 0px 4px;
-    color: $darker-accent-color;
+    color: $accent-cork;
   }
 }
-.link.created-by:hover, .link.mail:hover {
-  color: $light-font;
-  .author {
-    color: $accent-color;
+.button--created-by:hover, .button--mail:hover {
+  color: white;
+  .button__author {
+    color: $accent-cork--lighter;
   }
 }
 
