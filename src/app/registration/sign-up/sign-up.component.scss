@@ -65,10 +65,6 @@ i { // icons
     background-image: url('../../../assets/signin-assets/google_signin_buttons/web/1x/btn_google_signin_light_normal_web.png');
 }
 
-.google:hover {
-    background-image: url('../../../assets/signin-assets/google_signin_buttons/web/1x/btn_google_signin_light_focus_web.png');
-}
-
 .google:active {
     background-image: url('../../../assets/signin-assets/google_signin_buttons/web/1x/btn_google_signin_light_pressed_web.png');
 }
@@ -107,4 +103,9 @@ i { // icons
     color: rgb(221, 23, 23);
     font-size: 14px;
     padding: 5px;
+}
+
+.form-element__password-strength {
+    text-align: center;
+    margin-bottom: 20px;
 }
