@@ -41,7 +41,9 @@
             </div>
 
             <div class="form__form-element">
-                <div *ngIf="passwordStrength" class="form-element__password-strength"> {{passwordStrength}} password </div>
+                <div *ngIf="passwordStrength" class="form-element__password-strength">
+                    <div [ngClass]="passwordStrength.levelStyleClass"> {{passwordStrength.levelDescription}} </div>
+                </div>
                 <div class="input-group">
                     <i class="fas fa-lock"> </i>
                     <input id="password" class="input-group__input" placeholder="Password" formControlName="password"

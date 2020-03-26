@@ -109,3 +109,9 @@ i { // icons
     text-align: center;
     margin-bottom: 20px;
 }
+
+.password-strength--very-weak { color: rgb(235, 0, 0) }
+.password-strength--weak { color: rgb(216, 140, 0)}
+.password-strength--medium { color: rgb(236, 201, 0)}
+.password-strength--strong { color: rgb(117, 172, 36)}
+.password-strength--very-strong { color: green}
