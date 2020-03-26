@@ -1,4 +1,7 @@
-<div class="component">
-    <p>log-out works!</p>
+<div class="component component--in-the-middle-of-the-screen">
+    <div class='loading'>
+        <i (click)="onIconClick()" [ngClass]="iconClass"></i>
+        <p style="font-size: 20px;">Loading..</p>
+    </div>
 </div>
 
